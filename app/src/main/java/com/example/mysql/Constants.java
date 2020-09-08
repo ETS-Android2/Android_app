@@ -5,7 +5,7 @@ package com.example.mysql;
  */
 
 public class Constants {
-    public static final String URL= "http://192.168.61.80:84/try/";
+    public static final String URL= "http://roshanpriyankara.com/cecbatt/";
    // public static final String ROOT_URL = URL+"try/";
     public static final String URL_ADD = URL+"add.php";
     public static final String URL_DELETE = URL+"delete1.php";

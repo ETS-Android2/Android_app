@@ -19,7 +19,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 public class OutRecords extends AppCompatActivity {
-    private static final String URL_PRODUCTS = "http://192.168.61.80:84/try/APIOut.php";
+    private static final String URL_PRODUCTS = "http://roshanpriyankara.com/cecbatt/APIOut.php";
 
     //a list to store all the products
     List<Employee> employeeList;

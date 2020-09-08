@@ -148,7 +148,7 @@ public class CheckOut extends AppCompatActivity implements LocationListener {
         progressDialog.setCancelable(false);
         progressDialog.setTitle("CheckOut");
         progressDialog.show();
-        String url = "http://192.168.61.80:84/try/CheckOut.php";
+        String url = "http://roshanpriyankara.com/cecbatt/CheckOut.php";
         StringRequest request = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {

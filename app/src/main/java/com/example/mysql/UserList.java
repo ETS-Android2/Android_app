@@ -28,7 +28,7 @@ import java.util.Map;
 public class UserList extends AppCompatActivity {
     ProgressBar progressBarSubject;
     EditText editText ;
-    private static final String URL_PRODUCTS = "http://192.168.61.80:84/try/Api1.php";
+    private static final String URL_PRODUCTS = "http://roshanpriyankara.com/cecbatt/Api1.php";
     public static UserList ma;
 
     //a list to store all the products

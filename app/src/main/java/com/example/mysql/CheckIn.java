@@ -149,7 +149,7 @@ public class CheckIn extends AppCompatActivity implements LocationListener {
         progressDialog.setCancelable(false);
         progressDialog.setTitle("CheckIn");
         progressDialog.show();
-        String url = "http://192.168.61.80:84/try/CheckIn.php";
+        String url = "http://roshanpriyankara.com/cecbatt/CheckIn.php";
         StringRequest request = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {

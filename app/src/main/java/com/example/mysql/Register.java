@@ -88,7 +88,7 @@ public class Register extends AppCompatActivity {
         progressDialog.setCancelable(false);
         progressDialog.setTitle("New Account Registration");
         progressDialog.show();
-        String url = "http://192.168.61.80:84/try/register.php";
+        String url = "http://roshanpriyankara.com/cecbatt/register.php";
         StringRequest request = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {

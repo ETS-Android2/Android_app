@@ -7,4 +7,6 @@
     <color name="balch">#12110D</color>
     <color name="gray">#636045</color>
     <color name="cardColor">#ffffff</color>
+    <color name="Night">#ffffcc</color>
+    <color name="Morning">#ff8080</color>
 </resources>

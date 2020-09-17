@@ -91,7 +91,7 @@ public class WelcomeNew extends AppCompatActivity {
         cvChange.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(WelcomeNew.this,EditProfile.class));
+                startActivity(new Intent(WelcomeNew.this,UserEdit.class));
                 Toast.makeText(WelcomeNew.this,"Change your password here",Toast.LENGTH_SHORT).show();
 
             }

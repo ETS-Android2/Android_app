@@ -19,7 +19,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 public class TodayRecodes extends AppCompatActivity {
-    private static final String URL_PRODUCTS = "http://roshanpriyankara.com/cecbatt/Api.php";
+    private static final String URL_PRODUCTS = "http://www.cecberp.lk:3075/Api.php";
 
     //a list to store all the products
     List<Employee> employeeList;

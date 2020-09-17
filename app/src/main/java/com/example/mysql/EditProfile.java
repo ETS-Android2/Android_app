@@ -1,26 +1,19 @@
 package com.example.mysql;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-
-import org.apache.http.NameValuePair;
-import org.apache.http.message.BasicNameValuePair;
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import org.json.JSONObject;
+
+import java.util.HashMap;
 
 public class EditProfile extends Activity {
     private Button btnRemove, btnEdit, btnusers;
@@ -46,9 +39,15 @@ public class EditProfile extends Activity {
         editPassword = findViewById(R.id.etEditPassword);
         btnRemove = findViewById(R.id.btnRemove);
         btnEdit = findViewById(R.id.btnEdit);
-
-
         txtCancel = findViewById(R.id.btncancel);
+
+        txtCancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(EditProfile.this, Admin1.class));
+
+            }
+        });
 
     }
 
@@ -61,13 +60,7 @@ public class EditProfile extends Activity {
         final String email = editEmail.getText().toString();
         final String password = editPassword.getText().toString();
 
-        txtCancel.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(EditProfile.this, MainActivity.class));
 
-            }
-        });
 
         class Update extends AsyncTask<Void, Void, String>{
             ProgressDialog pdLoading = new ProgressDialog(EditProfile.this);

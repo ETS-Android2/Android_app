@@ -1,7 +1,5 @@
 package com.example.mysql;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
@@ -20,12 +18,13 @@ import android.provider.Settings;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
-import android.content.SharedPreferences;
+
 import com.android.volley.AuthFailureError;
 import com.android.volley.DefaultRetryPolicy;
 import com.android.volley.Request;
@@ -149,7 +148,7 @@ public class CheckIn extends AppCompatActivity implements LocationListener {
         progressDialog.setCancelable(false);
         progressDialog.setTitle("CheckIn");
         progressDialog.show();
-        String url = "http://roshanpriyankara.com/cecbatt/CheckIn.php";
+        String url = "http://www.cecberp.lk:3075/CheckIn.php";
         StringRequest request = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {

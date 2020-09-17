@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
         progressDialog.setCanceledOnTouchOutside(false);
         progressDialog.setIndeterminate(false);
         progressDialog.show();
-        String url = "http://roshanpriyankara.com/cecbatt/login1.php";
+        String url = "http://www.cecberp.lk:3075/login.php";
         StringRequest request = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {

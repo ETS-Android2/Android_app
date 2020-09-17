@@ -7,17 +7,36 @@
     android:layout_gravity="center"
     android:gravity="center"
     android:layout_height="match_parent"
+    android:background="@drawable/good_night_img"
     tools:context=".CheckOut">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Good Evening"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_1sdp"
+            />
+    </RelativeLayout>
 
     <TextView
         android:id="@+id/txtepfOut"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="2dp"
+        android:layout_marginTop="@dimen/_30ssp"
+        android:layout_marginRight="1dp"
         android:layout_marginBottom="28dp"
         android:text="EPF"
+        android:textColor="@color/white"
         android:textSize="17sp"
         android:textStyle="bold" />
 
@@ -27,10 +46,11 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:layout_marginRight="2dp"
+        android:layout_marginRight="@dimen/_1ssp"
         android:layout_marginBottom="28dp"
         android:text="Current Out Location"
         android:textSize="17sp"
+        android:textColor="@color/white"
         android:textStyle="bold" />
 
     <TextView
@@ -39,10 +59,11 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:layout_marginRight="2dp"
+        android:layout_marginRight="@dimen/_1ssp"
         android:layout_marginBottom="28dp"
         android:hint="Longitude-Out"
         android:textSize="18sp"
+        android:textColor="@color/white"
         android:textStyle="bold" />
 
     <TextView
@@ -51,10 +72,11 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:layout_marginRight="2dp"
+        android:layout_marginRight="@dimen/_1ssp"
         android:layout_marginBottom="28dp"
         android:hint="Latitude-Out"
         android:textSize="18sp"
+        android:textColor="@color/white"
         android:textStyle="bold" />
 
 
@@ -65,10 +87,11 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:layout_marginRight="2dp"
+        android:layout_marginRight="@dimen/_1ssp"
         android:layout_marginBottom="28dp"
         android:hint="Time-Out"
         android:textSize="18sp"
+        android:textColor="@color/white"
         android:textStyle="bold"
         />
 
@@ -81,6 +104,7 @@
         android:textStyle="bold"
         android:textColor="@color/colorPrimaryDark"
         android:width="250dp"
+        android:background="@color/Night"
         android:layout_marginTop="100dp"
         >
 

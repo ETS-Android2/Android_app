@@ -3,13 +3,11 @@ package com.example.mysql;
 import android.os.Bundle;
 import android.widget.EditText;
 import android.widget.ProgressBar;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
-import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
@@ -21,14 +19,12 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class UserList extends AppCompatActivity {
     ProgressBar progressBarSubject;
     EditText editText ;
-    private static final String URL_PRODUCTS = "http://roshanpriyankara.com/cecbatt/Api1.php";
+    private static final String URL_PRODUCTS = "http://www.cecberp.lk:3075/Api1.php";
     public static UserList ma;
 
     //a list to store all the products

@@ -3,7 +3,7 @@ I developed an Android App to check employees’ attendance.
 This project manages all the employees’ attendance data by computerized way. 
 Using Android Studio and PHP MySQL Backend
 
-###Process
+### Process
 I develop an Android App for check employees’ day by day attendance through this application.
 And It have user and admin control site. Admin can Insert, Update, Delete and View.
 
